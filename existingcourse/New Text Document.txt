@@ -1,0 +1,12 @@
+CREATE TABLE `gratification`.`existingcourse` (
+`ecourse_id` INT NOT NULL AUTO_INCREMENT PRIMARY KEY ,
+`department_id` INT NOT NULL ,
+`session` VARCHAR( 20 ) NOT NULL ,
+`course_code` VARCHAR( 20 ) NOT NULL ,
+`course_id` INT NOT NULL ,
+`credit_hour` DOUBLE NOT NULL ,
+UNIQUE (
+`session` ,
+`course_id`
+)
+) ENGINE = InnoDB;

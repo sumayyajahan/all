@@ -1,0 +1,29 @@
+CREATE TABLE `gratification`.`teacher` (
+`teacher_id` INT NOT NULL AUTO_INCREMENT PRIMARY KEY ,
+`teacher_name` VARCHAR( 100 ) NOT NULL ,
+`teacher_type` VARCHAR( 100 ) NOT NULL ,
+`department_name` VARCHAR( 100 ) NOT NULL ,
+`faculty_name` VARCHAR( 100 ) NOT NULL ,
+`university_name` VARCHAR( 100 ) NOT NULL ,
+`designation` VARCHAR( 100 ) NOT NULL ,
+`address` VARCHAR( 300 ) NOT NULL ,
+`mobile_no` VARCHAR( 20 ) NOT NULL ,
+`e_mail` VARCHAR( 100 ) NOT NULL ,
+`department_id` INT NOT NULL ,
+INDEX ( `department_id` ) ,
+UNIQUE (
+`teacher_name` ,
+`department_name` ,
+`address` ,
+`e_mail`
+)
+) ENGINE = InnoDB;
+
+
+
+
+
+
+
+ALTER TABLE `teacher` ADD `password` VARCHAR( 50 ) NOT NULL 
+ALTER TABLE `teacher` ADD `user` VARCHAR( 100 ) NOT NULL 

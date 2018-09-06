@@ -1,0 +1,11 @@
+CREATE TABLE `gratification`.`faculty` (
+`faculty_id` INT NOT NULL AUTO_INCREMENT PRIMARY KEY ,
+`faculty_name` VARCHAR( 100 ) NOT NULL ,
+`university_name` VARCHAR( 100 ) NOT NULL ,
+`university_id` INT NOT NULL ,
+INDEX ( `university_id` ) ,
+UNIQUE (
+`faculty_name` ,
+`university_name`
+)
+) ENGINE = InnoDB;

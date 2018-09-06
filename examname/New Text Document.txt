@@ -1,0 +1,15 @@
+CREATE TABLE `gratification`.`examname` (
+`exam_id` INT NOT NULL AUTO_INCREMENT PRIMARY KEY ,
+`year` VARCHAR( 20 ) NOT NULL ,
+`semester` VARCHAR( 20 ) NOT NULL ,
+`category` VARCHAR( 20 ) NOT NULL ,
+`session` VARCHAR( 20 ) NOT NULL ,
+`examyear` VARCHAR( 20 ) NOT NULL ,
+UNIQUE (
+`year` ,
+`semester` ,
+`category` ,
+`session` ,
+`examyear`
+)
+) ENGINE = InnoDB;

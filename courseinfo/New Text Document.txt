@@ -1,0 +1,36 @@
+CREATE TABLE `gratification`.`course_info` (
+`course_id` INT NOT NULL AUTO_INCREMENT PRIMARY KEY ,
+`department_name` VARCHAR( 100 ) NOT NULL ,
+`course_title` VARCHAR( 100 ) NOT NULL ,
+`course_code` VARCHAR( 100 ) NOT NULL ,
+`year` VARCHAR( 100 ) NOT NULL ,
+`semester` VARCHAR( 100 ) NOT NULL ,
+`credit_hour` DOUBLE NOT NULL ,
+`department_id` INT NOT NULL ,
+INDEX ( `department_id` ) ,
+UNIQUE (
+`course_title` ,
+`course_code` ,
+`year` ,
+`semester`
+)
+) ENGINE = InnoDB;
+
+
+
+CREATE TABLE `gratification`.`course_info` (
+`course_id` INT NOT NULL AUTO_INCREMENT PRIMARY KEY ,
+`depart_name` VARCHAR( 100 ) NOT NULL ,
+`course_title` VARCHAR( 100 ) NOT NULL ,
+`course_code` VARCHAR( 100 ) NOT NULL ,
+`year` VARCHAR( 100 ) NOT NULL ,
+`semester` VARCHAR( 100 ) NOT NULL ,
+`credit_hour` DOUBLE NOT NULL ,
+`department_id` INT( 11 ) NOT NULL ,
+UNIQUE (
+`course_title` ,
+`course_code` ,
+`year` ,
+`semester`
+)
+) ENGINE = MYISAM 

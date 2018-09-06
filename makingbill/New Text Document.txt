@@ -1,0 +1,21 @@
+CREATE TABLE `gratification`.`generatebill` (
+`bill_id` INT NOT NULL AUTO_INCREMENT PRIMARY KEY ,
+`type` VARCHAR( 20 ),
+`honorarium_id` INT NOT NULL ,
+`excourse_id` INT NOT NULL ,
+`classtest_no` VARCHAR( 20 ),
+`examinee` INT( 5 ) ,
+`internal` INT( 5 ),
+`external` INT( 5 ) ,
+`demerage` DOUBLE ,
+`demerage_cause` VARCHAR( 200 ),
+`incidental_charge` DOUBLE,
+`vowcher_no` VARCHAR( 10 ) ,
+`examiner_id` INT NOT NULL
+) ENGINE = InnoDB;
+
+
+
+
+
+ALTER TABLE `generatebill` ADD `examtime` DATE NULL 

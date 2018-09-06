@@ -1,0 +1,39 @@
+body{margin:0px; padding:0px; background:#fffde4 url(images/bodyBg.jpg) repeat-x
+font-family: Arial;
+	font-size: 8px;
+	margin: 0;
+	min-width: 1024px;} 
+h1
+{
+color:orange;
+text-align:center;
+
+
+}
+h6
+{
+color:orange;
+text-align:center;
+font-family:"Arial";
+
+    
+}
+h4
+{
+color:blue;
+text-align:center;
+font-family:"Arial";
+
+    
+}
+p
+{color:orange;
+font-family:"Arial";
+font-size:15px;
+ 
+}
+button {
+    border: 1px solid #006;
+    background: #9cf;
+   
+}
